@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" th:href="@{css/styles.css}">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="app-pres">
+        <img th:src="@{images/logo.svg}" alt="">
+        <div class="app-name">MyApp</div>
+    </div>
+
+    <div class="singup-login-section">
+
+        <p class="bonus">START FOR FREE</p>
+
+        <header class="signup-login-header">Create a new account</header>
+
+        <p class="login-transition">Already a member? <a href="/login">Login</a></p>
+
+        <form id="signUpForm" action="/signUp" method="post">
+            <div class="near">
+                <input type="text" placeholder="First name" name="firstName" required>
+                <input type="text" placeholder="Last name" name="lastName" required>
+            </div>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <input type="password" placeholder="Repeat Password" name="repeated-password" required>
+            <div class="signup-login-btn-container">
+                <button type="submit" class="btn">SignUp</button>
+            </div>
+
+            <div class="container-box" th:style="${display}">
+                <p id="message" th:text="${errorMessage}" th:style="${color}"></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="javascript/signUpScript.js"></script>
+</body>
+</html>

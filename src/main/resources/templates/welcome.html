@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{css/style.css}">
+    <title>Welcome</title>
+</head>
+<body>
+
+<div class="container">
+    <img class="rocket-image" src="images/welcome.svg" alt="">
+
+    <h1>Hey  <span th:text="${user.firstName}"></span> <br> Welcome to our app</h1>
+
+    <p>It's nice to have you here!</p>
+
+   <a href="/logout"><button>Log out</button></a>
+</div>
+
+</body>
+</html>

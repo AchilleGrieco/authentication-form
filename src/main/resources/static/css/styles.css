@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #786173;
+    font-family: 'Cabin', sans-serif;
+}
+
+.signup-login-header {
+    margin-bottom: 15px;
+    color: #152F47;
+    text-align: left;
+    font-size: 30px;
+    font-family: inherit;
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;
+}
+
+.bonus {
+    color: #c2c8cf;
+    font-size: 14px;
+}
+
+.login-transition {
+    margin-bottom: 15px;
+}
+
+.login-transition a {
+    color: white;
+    font-weight: 400;
+    padding-left: 3px;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/pexels-simon-rizzi-1809644.jpg");
+    background-position: center;
+    width: 800px;
+    min-height: 600px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    padding: 20px 30px 100px 30px;
+    background-color: white;
+}
+
+.app-pres {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.app-pres img{
+    margin-right: 12px;
+}
+
+.app-name {
+    font-size: 30px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+}
+
+
+form {
+    width: 45%;
+    display: grid;
+    gap: 20px;
+}
+
+.near {
+    display: flex;
+    justify-content: space-between;
+}
+
+.near input:first-child{
+    margin-right: 10px;
+}
+
+input, button {
+    height: 45px;
+    border-radius: 13px;
+    padding: 0 20px;
+    color: white;
+    background-color: #313040;
+    border: 0;
+    outline: none;
+    width: 100%;
+}
+
+button {
+    width: 75%;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    background-color: #2f5070;
+}
+
+.signup-login-btn-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+input:focus {
+    outline: #051D33 1px solid;
+}
+
+::placeholder {
+    color: white;
+    font-family: 'Cabin', sans-serif;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.container-box {
+    margin-top: 20px;
+    display: flex;
+    height: 80px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #313040dd;
+}
+
+.container-box > p {
+    color: greenyellow;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 901px) {
+    .container {
+        width: 90%;
+    }
+
+    form {
+        min-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .near {
+        flex-wrap: wrap;
+    }
+
+    .near input:first-child{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .app-pres {
+        margin-bottom: 20px;
+    }
+
+    form {
+        min-width: 0px;
+        width: 100%;
+    }
+
+
+
+}

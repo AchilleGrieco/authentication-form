@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" th:href="@{css/styles.css}">
+    <title>Login Authentication Form</title>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="app-pres">
+        <img src="images/logo.svg" alt="">
+        <div class="app-name">MyApp</div>
+    </div>
+
+    <div class="singup-login-section">
+
+        <p class="bonus">WELCOME BACK</p>
+
+        <header class="signup-login-header">Log into your account</header>
+
+        <p class="login-transition">Don't have an account? <a href="/signUp">SignUp</a></p>
+
+        <form id="login-form">
+            <input id="email" type="email" placeholder="Email" required>
+            <input id="password" type="password" placeholder="Password" required>
+
+            <div class="signup-login-btn-container">
+                <button type="submit" class="btn">Login</button>
+            </div>
+
+            <div class="container-box" th:style="${display}">
+                <p th:text="${message}" th:style="${color}"></p>
+            </div>
+        </form>
+
+
+    </div>
+
+
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
