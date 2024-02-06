@@ -1,6 +1,6 @@
 package com.example.AuthForm.config;
 
-import com.example.AuthForm.model.AuthFormRepository;
+import com.example.AuthForm.repository.AuthFormRepository;
 
 import com.example.AuthForm.security.AuthFormEntryPoint;
 import org.springframework.beans.factory.annotation.Autowired;

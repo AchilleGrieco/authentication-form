@@ -1,7 +1,7 @@
 package com.example.AuthForm.service;
 
 
-import com.example.AuthForm.model.AuthFormRepository;
+import com.example.AuthForm.repository.AuthFormRepository;
 import com.example.AuthForm.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
