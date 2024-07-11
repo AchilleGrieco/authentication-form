@@ -6,7 +6,7 @@ This project is a demonstration of an authentication form developed using Java (
 - **User Authentication**: Users can sign up with their email and password, and log in securely.
 - **Secure Password Storage**: Passwords are securely hashed and stored in the MySQL database.
 - **Session Management**: Sessions are managed securely to keep users authenticated throughout their session.
-- **HTML & CSS**: The graphical interface is designed using HTML and styled with CSS for a visually pleasing user experience.
+- **HTML & CSS**: The graphical interface is designed using HTML and styled with CSS.
 
 
 ## Technologies Used
